@@ -1,0 +1,52 @@
+<div class="contenedor">
+<div *ngFor="let card of cardcontent" id="cards">
+        <div class="container-fluid" id="contenido">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{card.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{card.title}}</h5>
+                            <p class="card-text">{{card.text}}</p>
+                            <a (click)="ComprarLP(card.title, card.text)" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--carrusel nuevo -->
+    <div class="carrusel">
+        <ngb-carousel *ngIf="images" >
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="../../../../assets/img/dimebag.png">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Dimebag Darrel</h3>
+                    <p>Guitarrista y miembro fundador de Pantera.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="../../../../assets/img/james_hetfield.png">
+                </div>
+                <div class="carousel-caption">
+                    <h3>James Hetfield</h3>
+                    <p>Guitarrista,vocalista, y miembro fundador de Metallica.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="../../../../assets/img/zakk-wylde-black-label-mark-horton-wireimage-gettyimages-586850144.jpg">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Zakk Wylde</h3>
+                    <p>Guitarrista y vocalista de Black Label Society. También toca con Ozzy Osbourne.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    
+</div>

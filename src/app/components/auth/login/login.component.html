@@ -1,0 +1,24 @@
+<form [formGroup]="registerForm" (ngSubmit)="sendData()">
+
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1"  class="form-label">Correo</label>
+        <input type="email" formControlName="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div *ngIf="email?.invalid">
+        Campo requerido
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1"  class="form-label">Pass</label>
+        <input class="form-control" formControlName="pass" id="exampleFormControlpass">
+    </div>
+    <div *ngIf="pass?.invalid">
+        Campo requerido
+    </div>
+    <div>
+        <button (click)="register()" class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+</form>
+<div>
+    
+</div>

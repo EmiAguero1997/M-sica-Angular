@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 768px) {
+    .nav-item{
+        
+        width: 20% !important;
+    }
+}

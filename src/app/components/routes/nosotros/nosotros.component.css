@@ -1,0 +1,22 @@
+.caja{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.caja h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.caja p{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: white;
+}
+.subdiv{
+    background-color: grey;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+}

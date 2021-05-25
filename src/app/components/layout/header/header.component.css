@@ -1,0 +1,30 @@
+#logo{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+.nav-item{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.navbar-text{
+    color: white !important;  
+}
+#links{
+    margin-left: 100px;
+}
+
+span{
+    margin-left: 300px;
+}
+@media screen and (max-width: 768px) {
+    .nav-item{
+        
+        width: 20% !important;
+    }
+}

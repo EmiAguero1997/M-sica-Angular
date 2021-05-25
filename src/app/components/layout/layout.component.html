@@ -1,0 +1,7 @@
+<app-header (pasaje)="Show2($event)"></app-header>
+<router-outlet >
+    <app-contacto (pasaje)="Show2($event)" *ngIf="false"></app-contacto>
+    
+</router-outlet>
+<app-contenido *ngIf="layout_flag" ></app-contenido>
+<app-footer></app-footer>
